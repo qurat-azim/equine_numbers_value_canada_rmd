@@ -86,6 +86,15 @@ province_plot <- horse_pop %>%
   scale_y_continuous(labels = scales::comma) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 province_plot
+
+ggsave("province_plot.png")
+
+```
+
+## reading an extra plot
+
+```{r out.height="200px", out.width="200px"}
+knitr:: include_graphics("province_plot.png")
 ```
 
 ## References
